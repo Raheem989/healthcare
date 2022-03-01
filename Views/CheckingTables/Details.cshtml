@@ -1,0 +1,74 @@
+﻿@model FinalProjectKidsHealthCenter.Models.CheckingTable
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>CheckingTable</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.CheckResTable.CheckResName)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.CheckResTable.CheckResName)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.ChildTable.Child_FName)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.ChildTable.Child_FName)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.DissessesTable.Di_Name)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.DissessesTable.Di_Name)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.EmployeeTable.EMP_FName)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.EmployeeTable.EMP_FName)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Weight)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Weight)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Height)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Height)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.date)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.date)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.Checking_ID }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

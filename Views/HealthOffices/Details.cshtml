@@ -1,0 +1,82 @@
+﻿@model FinalProjectKidsHealthCenter.Models.HealthOffice
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>HealthOffice</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.AreaTable.AreaName)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.AreaTable.AreaName)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.CovernorateTable.CovernorateName)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.CovernorateTable.CovernorateName)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.MinistryRepresentator.MR_FName)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.MinistryRepresentator.MR_FName)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.NeighborhoodTable.NeighborhoodName)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.NeighborhoodTable.NeighborhoodName)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.HO_OfficeName)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.HO_OfficeName)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.HO_Address)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.HO_Address)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.HO_Email)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.HO_Email)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.HO_PhoneNo)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.HO_PhoneNo)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.HO_ID }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

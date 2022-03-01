@@ -1,0 +1,50 @@
+﻿@model FinalProjectKidsHealthCenter.Models.VaccineCampingTranasaction
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>VaccineCampingTranasaction</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.ChildTable.Child_FName)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.ChildTable.Child_FName)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.EmployeeTable.EMP_FName)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.EmployeeTable.EMP_FName)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.VaccineCampingTable.VC_Name)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.VaccineCampingTable.VC_Name)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Date)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Date)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.CT_ID }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

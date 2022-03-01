@@ -1,0 +1,75 @@
+﻿@model IEnumerable<FinalProjectKidsHealthCenter.Models.HealthOffice>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Index</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.AreaTable.AreaName)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.CovernorateTable.CovernorateName)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.MinistryRepresentator.MR_FName)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.NeighborhoodTable.NeighborhoodName)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.HO_OfficeName)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.HO_Address)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.HO_Email)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.HO_PhoneNo)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.AreaTable.AreaName)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.CovernorateTable.CovernorateName)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.MinistryRepresentator.MR_FName)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.NeighborhoodTable.NeighborhoodName)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.HO_OfficeName)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.HO_Address)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.HO_Email)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.HO_PhoneNo)
+        </td>
+        <td>
+            @Html.ActionLink("Edit", "Edit", new { id=item.HO_ID }) |
+            @Html.ActionLink("Details", "Details", new { id=item.HO_ID }) |
+            @Html.ActionLink("Delete", "Delete", new { id=item.HO_ID })
+        </td>
+    </tr>
+}
+
+</table>

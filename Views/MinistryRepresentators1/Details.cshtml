@@ -1,0 +1,66 @@
+﻿@model FinalProjectKidsHealthCenter.Models.MinistryRepresentator
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>MinistryRepresentator</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.GenderTable.GenderName)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.GenderTable.GenderName)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.MR_FName)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.MR_FName)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.MR_MiniName)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.MR_MiniName)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.MR_LName)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.MR_LName)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.MR_Email)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.MR_Email)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.MR_PhoneNo)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.MR_PhoneNo)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.MR_ID }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

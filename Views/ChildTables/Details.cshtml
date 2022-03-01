@@ -1,0 +1,98 @@
+﻿@model FinalProjectKidsHealthCenter.Models.ChildTable
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>ChildTable</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.AreaTable.AreaName)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.AreaTable.AreaName)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.CovernorateTable.CovernorateName)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.CovernorateTable.CovernorateName)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.GenderTable.GenderName)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.GenderTable.GenderName)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.NeighborhoodTable.NeighborhoodName)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.NeighborhoodTable.NeighborhoodName)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.RelativeTable.Re_FName)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.RelativeTable.Re_FName)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Child_FName)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Child_FName)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Child_MiniName)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Child_MiniName)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Child_LName)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Child_LName)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Child_BirthDate)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Child_BirthDate)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Child_Address)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Child_Address)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.Child_ID }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

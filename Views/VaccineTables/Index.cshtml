@@ -1,0 +1,51 @@
+﻿@model IEnumerable<FinalProjectKidsHealthCenter.Models.VaccineTable>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Index</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.DissessesTable.Di_Name)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.VaccineAgeTable.VaccineAgeName)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.VaccineNameTable.VacineName)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.DoseRoute)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.DissessesTable.Di_Name)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.VaccineAgeTable.VaccineAgeName)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.VaccineNameTable.VacineName)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.DoseRoute)
+        </td>
+        <td>
+            @Html.ActionLink("Edit", "Edit", new { id=item.Vacc_ID }) |
+            @Html.ActionLink("Details", "Details", new { id=item.Vacc_ID }) |
+            @Html.ActionLink("Delete", "Delete", new { id=item.Vacc_ID })
+        </td>
+    </tr>
+}
+
+</table>

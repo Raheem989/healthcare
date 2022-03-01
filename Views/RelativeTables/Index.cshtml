@@ -1,0 +1,87 @@
+﻿@model IEnumerable<FinalProjectKidsHealthCenter.Models.RelativeTable>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Index</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.AreaTable.AreaName)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.CovernorateTable.CovernorateName)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.GenderTable.GenderName)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.NeighborhoodTable.NeighborhoodName)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Re_FName)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Re_MiniName)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Re_LName)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Re_Address)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Re_PhoneNo)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Re_Email)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.AreaTable.AreaName)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.CovernorateTable.CovernorateName)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.GenderTable.GenderName)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.NeighborhoodTable.NeighborhoodName)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Re_FName)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Re_MiniName)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Re_LName)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Re_Address)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Re_PhoneNo)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Re_Email)
+        </td>
+        <td>
+            @Html.ActionLink("Edit", "Edit", new { id=item.Re_ID }) |
+            @Html.ActionLink("Details", "Details", new { id=item.Re_ID }) |
+            @Html.ActionLink("Delete", "Delete", new { id=item.Re_ID })
+        </td>
+    </tr>
+}
+
+</table>
